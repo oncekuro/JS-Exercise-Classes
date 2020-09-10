@@ -239,7 +239,7 @@ class Student extends Lambdasian {
     this.grade = attributes.grade;
   }
   listSubjects() {
-    return `Loves ${this.favSubjects}!`;
+    return `${this.name} Loves ${this.favSubjects}!`;
   }
   PRAssignment(subject) {
     return `${this.name} has submitted a PR for ${subject}.`;
@@ -271,7 +271,7 @@ const mina = new Student({
 console.log(mina);
 console.log(mina.speak());
 console.log(mina.listSubjects());
-console.log(mina.PRAssignment("React"));
+console.log(mina.PRAssignment("Python"));
 console.log(mina.sprintChallenge("Redux"));
 
 console.log(kuro.gradePoint(mina));
