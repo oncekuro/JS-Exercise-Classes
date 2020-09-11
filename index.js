@@ -50,9 +50,6 @@ class Person {
     if (this.stomach.length < 10) {
       this.stomach.push(pizza);
     }
-    if (this.stomach.length === 10) {
-      this.stomach = [];
-    }
   }
   poop() {
     this.stomach = [];
